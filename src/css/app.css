@@ -308,10 +308,10 @@ h3 {
   }
   .pricing h3 {
     margin-bottom: 203px;
-    font-weight: bold;
   }
   .pricing-container h2 {
     margin-bottom: 49px;
+    font-weight: normal;
   }
   .pricing-item {
     padding-top: 16px;
