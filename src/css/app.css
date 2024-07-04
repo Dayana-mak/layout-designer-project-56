@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-weight: 400;
   font-family: Roboto;
@@ -25,9 +26,9 @@ body {
 h1,
 h2,
 h3 {
-  font-weight: bold;
-  text-transform: uppercase;
   margin: 0;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 h1 {
@@ -39,6 +40,7 @@ h2 {
 }
 
 h3 {
+  font-weight: normal;
   font-size: 24px;
 }
 
@@ -55,8 +57,15 @@ h3 {
 .button {
   padding: 20px 30px;
   border-radius: 5px;
+  font-family: Roboto, sans-serif;
   color: #fff;
   cursor: pointer;
+}
+
+.button-transparent {
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 1px solid #fff;
 }
 
 @media screen and (max-width: 1239px) {
@@ -99,6 +108,9 @@ h3 {
   color: #cacaca;
 }
 .menu-link:hover {
+  color: #fff;
+}
+.menu-link-active {
   color: #fff;
 }
 
@@ -215,6 +227,90 @@ h3 {
   }
   .description-container .description-text {
     margin-top: 16px;
+  }
+}
+.pricing-container {
+  padding-top: 100px;
+}
+.pricing-container h2 {
+  margin-bottom: 48px;
+}
+.pricing-container p {
+  text-align: center;
+}
+.pricing-container-footer {
+  margin: 0;
+}
+
+.pricing {
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.pricing h3 {
+  margin-bottom: 200px;
+}
+.pricing-item {
+  padding: 1.5rem 1.5rem 4rem;
+  border-radius: 1rem;
+}
+.pricing-value {
+  margin-bottom: 40px;
+  font-size: 64px;
+  line-height: 1;
+  text-align: center;
+}
+.pricing-value::after {
+  position: relative;
+  top: -16px;
+  left: 16px;
+  font-size: 32px;
+  content: "руб.";
+  text-transform: uppercase;
+  align-content: baseline;
+  margin-bottom: 40px;
+}
+.pricing-button {
+  margin-bottom: 64px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.pricing-footer {
+  font-size: 12.8px;
+  margin: 0;
+}
+
+.bg-free {
+  background-image: url("../images/background/subscribe_1.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-standard {
+  background-image: url("../images/background/subscribe_2.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-premium {
+  background-image: url("../images/background/subscribe_3.png");
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1239px) {
+  .pricing {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .pricing h3 {
+    margin-bottom: 203px;
+    font-weight: bold;
+  }
+  .pricing-item {
+    padding-top: 16px;
   }
 }
 
