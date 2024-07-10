@@ -37,6 +37,7 @@ h1 {
 
 h2 {
   font-size: 38px;
+  font-weight: 500;
 }
 
 h3 {
@@ -373,6 +374,9 @@ h3 {
 @media screen and (max-width: 1239px) {
   .news-item {
     flex-direction: column;
+  }
+  .news-body h3 {
+    font-size: 16px;
   }
 }
 
