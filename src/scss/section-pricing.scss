@@ -1,6 +1,4 @@
 .pricing-container {
-  padding-top: 100px;
-
   h2 {
     margin-bottom: 48px;
   }
@@ -42,8 +40,6 @@
       font-size: 32px;
       content: "руб.";
       text-transform: uppercase;
-      align-content: baseline;
-      margin-bottom: 40px;
     }
   }
 
@@ -64,6 +60,7 @@
   background-image: url("../images/background/subscribe_1.png");
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 
 }
 
