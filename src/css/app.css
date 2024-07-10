@@ -330,8 +330,13 @@ h3 {
   text-transform: capitalize;
 }
 .news-body .news-description {
-  margin-bottom: 24px;
   color: #cacaca;
+}
+.news-body .mb-24 {
+  margin-bottom: 24px;
+}
+.news-body .mb-16 {
+  margin-bottom: 16px;
 }
 
 .news-author {
@@ -376,6 +381,7 @@ h3 {
     flex-direction: column;
   }
   .news-body h3 {
+    margin-bottom: 16px;
     font-size: 16px;
   }
 }
