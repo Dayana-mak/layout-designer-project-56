@@ -1,0 +1,41 @@
+.app-container {
+  margin-bottom: 100px;
+
+  h2 {
+    margin-bottom: 48px;
+  }
+}
+
+.app-content {
+  display: flex;
+  column-gap: 144px;
+
+  .app-image {
+    align-self: center;
+  }
+}
+
+
+.app-description {
+
+  max-width: 600px;
+
+  &-text {
+    color: $text-color;
+  }
+
+  &-button {
+    padding: 17px 41px;
+    font-size: 12.8px;
+    line-height: 1.5;
+    background-color: $brown;
+    border: none;
+    border-radius: 35px;
+  }
+}
+
+@media screen and (max-width: 1239px) {
+  .app-content {
+    flex-direction: column-reverse;
+  }
+}
