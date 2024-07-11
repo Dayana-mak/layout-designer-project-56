@@ -13,11 +13,11 @@
 
 .menu {
   display: flex;
-  padding: 0;
-  margin: 0;
+  // padding: 0;
+  // margin: 0;
   flex-wrap: wrap;
   column-gap: 20px;
-  list-style-type: none;
+  // list-style-type: none;
 
   &-link{
     color: $text-color;

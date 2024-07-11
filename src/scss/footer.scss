@@ -1,0 +1,90 @@
+.footer-container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer-nav {
+  display: flex;
+  column-gap: 40px;
+
+  &-col {
+    flex: 1 0 270px;
+
+    h4 {
+      margin: 0 0 15px;
+    }
+  }
+}
+
+.footer-subscribe-list {
+  display: flex;
+  column-gap: 24px;
+  align-items: center;
+}
+
+.footer-icon {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.icon-google {
+  width: 26px;
+  height: 17px;
+  background-image: url("../images/icons/Google+.png");
+}
+
+.icon-twitter {
+  width: 22px;
+  height: 19px;
+  background: url("../images/icons/Twitter.png")
+}
+
+.icon-facebook {
+  width: 12px;
+  height: 20px;
+  background: url("../images/icons/Facebook.png");
+}
+
+.icon-instagram {
+  width: 19px;
+  height: 20px;
+  background: url("../images/icons/Instagram.png");
+}
+
+.footer-line {
+  box-sizing: border-box;
+  height: 2px;
+  background-color: $text-color;
+  border: none;
+}
+
+.footer-bottom {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  &-list {
+    display: flex;
+    gap: 16px;
+  }
+}
+
+.bg-gradient {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+
+@media screen and (max-width: 1239px) {
+  .footer-nav {
+    flex-direction: column;
+    row-gap: 30px;
+
+    &-col {
+      flex: 1 0 0;
+    }
+  }
+
+  .footer-bottom-list {
+    flex-direction: column;
+  }
+}

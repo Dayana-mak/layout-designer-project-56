@@ -41,8 +41,13 @@ h2 {
 }
 
 h3 {
-  font-weight: normal;
+  font-weight: 500;
   font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 .container {
@@ -54,6 +59,7 @@ h3 {
 .link {
   text-decoration: none;
   cursor: pointer;
+  color: #cacaca;
 }
 
 .button {
@@ -68,6 +74,12 @@ h3 {
   background-color: transparent;
   text-transform: uppercase;
   border: 1px solid #fff;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 @media screen and (max-width: 1239px) {
@@ -101,11 +113,8 @@ h3 {
 
 .menu {
   display: flex;
-  padding: 0;
-  margin: 0;
   flex-wrap: wrap;
   column-gap: 20px;
-  list-style-type: none;
 }
 .menu-link {
   color: #cacaca;
@@ -418,6 +427,91 @@ h3 {
 @media screen and (max-width: 1239px) {
   .app-content {
     flex-direction: column-reverse;
+  }
+}
+.footer-container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer-nav {
+  display: flex;
+  column-gap: 40px;
+}
+.footer-nav-col {
+  flex: 1 0 270px;
+}
+.footer-nav-col h4 {
+  margin: 0 0 15px;
+}
+
+.footer-subscribe-list {
+  display: flex;
+  column-gap: 24px;
+  align-items: center;
+}
+
+.footer-icon {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.icon-google {
+  width: 26px;
+  height: 17px;
+  background-image: url("../images/icons/Google+.png");
+}
+
+.icon-twitter {
+  width: 22px;
+  height: 19px;
+  background: url("../images/icons/Twitter.png");
+}
+
+.icon-facebook {
+  width: 12px;
+  height: 20px;
+  background: url("../images/icons/Facebook.png");
+}
+
+.icon-instagram {
+  width: 19px;
+  height: 20px;
+  background: url("../images/icons/Instagram.png");
+}
+
+.footer-line {
+  box-sizing: border-box;
+  height: 2px;
+  background-color: #cacaca;
+  border: none;
+}
+
+.footer-bottom {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.footer-bottom-list {
+  display: flex;
+  gap: 16px;
+}
+
+.bg-gradient {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+
+@media screen and (max-width: 1239px) {
+  .footer-nav {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .footer-nav-col {
+    flex: 1 0 0;
+  }
+  .footer-bottom-list {
+    flex-direction: column;
   }
 }
 
