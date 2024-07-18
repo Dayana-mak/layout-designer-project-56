@@ -184,21 +184,21 @@ ul {
     width: 100%;
   }
 }
-.section-description {
-  background-image: url("../images/background/banner.png");
+.bg-main {
+  background-image: url("/src/images/background/banner.png");
   background-position: center;
   background-size: cover;
 }
 
-.description-container {
+.description-container-main {
+  padding-top: 200px;
+  padding-bottom: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
   text-align: center;
 }
-.description-container .description-text {
+.description-container-main .description-text {
   margin-top: 31px;
 }
 
@@ -511,6 +511,73 @@ ul {
     flex: 1 0 0;
   }
   .footer-bottom-list {
+    flex-direction: column;
+  }
+}
+.bg-artist {
+  background-image: url("/src/images/background/Morten Harket.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.description-container-artist {
+  padding-top: 250px;
+  padding-bottom: 223px;
+}
+.description-container-artist h1 {
+  text-align: left;
+}
+.description-container-artist p {
+  margin-bottom: 48px;
+}
+
+.buttons {
+  display: flex;
+  gap: 24px;
+}
+.buttons .artist-button {
+  position: relative;
+  padding-left: 67px;
+  box-sizing: border-box;
+  width: 200px;
+  height: 62px;
+  text-transform: uppercase;
+  border: none;
+  font-size: 12.8px;
+  text-align: left;
+}
+.buttons .button-mix {
+  background-color: #5328a1;
+}
+.buttons .button-mix::before {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 21px;
+  left: 31px;
+  background-image: url("/src/images/icons/play-button.svg");
+  filter: invert(1);
+  content: "";
+}
+.buttons .button-liked {
+  background-color: #95390c;
+}
+.buttons .button-liked::before {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 21px;
+  left: 31px;
+  background-image: url("/src/images/icons/heart.svg");
+  filter: invert(1);
+  content: "";
+}
+
+@media screen and (max-width: 1239px) {
+  .description-container-artist {
+    padding-top: 225px;
+  }
+  .buttons {
     flex-direction: column;
   }
 }
