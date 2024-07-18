@@ -1,5 +1,5 @@
 .bg-artist {
-  background-image: url("/src/images/background/Morten\ Harket.png");
+  background-image: url("./images/background/Morten\ Harket.png");
   background-position: center;
   background-size: cover;
 }
@@ -41,7 +41,7 @@
       height: 20px;
       top: 21px;
       left: 31px;
-      background-image: url("/src/images/icons/play-button.svg");
+      background-image: url("./images/icons/play-button.svg");
       filter: invert(1);
       content: "";
     }
@@ -56,7 +56,7 @@
     height: 20px;
     top: 21px;
     left: 31px;
-    background-image: url("/src/images/icons/heart.svg");
+    background-image: url("./images/icons/heart.svg");
     filter: invert(1);
     content: "";
     }
