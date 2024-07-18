@@ -25,12 +25,27 @@ body {
   background-color: $bg-color;
 }
 
+.main-page {
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+  }
+}
+
+.artist-page {
+  h1,
+  h2,
+  h3 {
+    text-align: left;
+  }
+}
+
 h1,
 h2,
 h3 {
   margin: 0;
   text-transform: uppercase;
-  text-align: center;
 }
 
 h1 {

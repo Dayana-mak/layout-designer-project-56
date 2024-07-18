@@ -23,12 +23,23 @@ body {
   background-color: #08020d;
 }
 
+.main-page h1,
+.main-page h2,
+.main-page h3 {
+  text-align: center;
+}
+
+.artist-page h1,
+.artist-page h2,
+.artist-page h3 {
+  text-align: left;
+}
+
 h1,
 h2,
 h3 {
   margin: 0;
   text-transform: uppercase;
-  text-align: center;
 }
 
 h1 {
@@ -184,7 +195,7 @@ ul {
     width: 100%;
   }
 }
-.bg-main {
+.bg-main-page {
   background-image: url("../images/background/banner.png");
   background-position: center;
   background-size: cover;
@@ -234,10 +245,10 @@ ul {
 }
 
 @media screen and (max-width: 1239px) {
-  .description-container {
+  .description-container-main {
     padding-top: 248px;
   }
-  .description-container .description-text {
+  .description-container-main .description-text {
     margin-top: 16px;
   }
 }
@@ -514,7 +525,7 @@ ul {
     flex-direction: column;
   }
 }
-.bg-artist {
+.bg-artist-page {
   background-image: url("../images/background/Morten Harket.png");
   background-position: center;
   background-size: cover;
@@ -523,9 +534,6 @@ ul {
 .description-container-artist {
   padding-top: 250px;
   padding-bottom: 223px;
-}
-.description-container-artist h1 {
-  text-align: left;
 }
 .description-container-artist p {
   margin-bottom: 48px;
@@ -579,6 +587,50 @@ ul {
   }
   .buttons {
     flex-direction: column;
+  }
+}
+.popular-track-container h2 {
+  margin-bottom: 48px;
+}
+
+.tracks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 50px;
+  row-gap: 25px;
+}
+
+.popular-track {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12.8px;
+}
+.popular-track img {
+  width: 55px;
+  height: 55px;
+}
+.popular-track .track-info {
+  padding-left: 15px;
+  flex: 1 0 auto;
+}
+.popular-track .track-info .track-name {
+  font-size: 12.8px;
+  margin: 0;
+}
+.popular-track .track-info .track-artist {
+  margin: 0;
+  color: #e0e0e0;
+}
+.popular-track .track-duration {
+  color: #e0e0e0;
+}
+
+@media screen and (max-width: 1239px) {
+  .tracks {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
   }
 }
 
