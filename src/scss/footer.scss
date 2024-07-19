@@ -17,6 +17,7 @@
 }
 
 .footer-subscribe-list {
+  padding-top: 6px;
   display: flex;
   column-gap: 24px;
   align-items: center;
@@ -38,7 +39,7 @@
 .icon-twitter {
   width: 22px;
   height: 19px;
-  background: url("../images/icons/Twitter.png")
+  background: url("../images/icons/Twitter.png");
 }
 
 .footer-line {
