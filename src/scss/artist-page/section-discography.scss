@@ -1,0 +1,38 @@
+.discography-container {
+  h2 {
+    margin-bottom: 48px;
+  }
+}
+
+.discography-list {
+  display: grid;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 50px;
+  row-gap: 25px;
+
+  .album-name {
+    margin: 12px 0 0;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  
+  .album-date {
+    margin: 0;
+    color: $light;
+  }
+  
+}
+
+@media screen and (max-width:1239px){
+  .discography-list {
+    grid-template-columns: repeat(2, 138px);
+    grid-template-rows: repeat(3, max-content);
+  }
+
+  .discography-image {
+    width: 137px;
+    height: 137px;
+  }
+}
