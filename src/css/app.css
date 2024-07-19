@@ -439,8 +439,8 @@ ul {
   }
 }
 .footer-container {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 62px;
+  padding-bottom: 64px;
 }
 
 .footer-nav {
@@ -479,18 +479,6 @@ ul {
   background: url("../images/icons/Twitter.png");
 }
 
-.icon-facebook {
-  width: 12px;
-  height: 20px;
-  background: url("../images/icons/Facebook.png");
-}
-
-.icon-instagram {
-  width: 19px;
-  height: 20px;
-  background: url("../images/icons/Instagram.png");
-}
-
 .footer-line {
   box-sizing: border-box;
   height: 2px;
@@ -500,7 +488,7 @@ ul {
 
 .footer-bottom {
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 49px;
 }
 .footer-bottom-list {
   display: flex;
@@ -512,6 +500,9 @@ ul {
 }
 
 @media screen and (max-width: 1239px) {
+  .footer-container {
+    padding-bottom: 67px;
+  }
   .footer-nav {
     flex-direction: column;
     row-gap: 30px;
