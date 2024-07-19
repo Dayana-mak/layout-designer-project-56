@@ -10,8 +10,7 @@
   display: grid;
   grid-template-columns: repeat(4, 250px);
   grid-template-rows: repeat(2, 1fr);
-  column-gap: 50px;
-  row-gap: 25px;
+  gap: 50px 20px;
 }
 
 .similar-artist-item {
@@ -31,7 +30,7 @@
   }
 }
 
-@media screen and (max-width:1239px) {
+@media screen and (max-width <= 1239px) {
   .similar-artist-list {
     grid-template-columns: repeat(2, 137px);
     grid-template-rows: repeat(4, 1fr);

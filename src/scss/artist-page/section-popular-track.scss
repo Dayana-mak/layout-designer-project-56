@@ -8,8 +8,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  column-gap: 50px;
-  row-gap: 25px;
+  gap: 50px 25px;
 }
 
 .popular-track {
@@ -44,7 +43,7 @@
   
 }
 
-@media screen and (max-width: 1239px) {
+@media screen and (max-width <= 1239px) {
   .tracks {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);

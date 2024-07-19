@@ -31,6 +31,7 @@
 
   .button-mix {
     background-color: $purple;
+    
     &::before {
       position: absolute;
       width: 20px;
@@ -59,7 +60,7 @@
   }
 }
 
-@media screen and (max-width: 1239px) {
+@media screen and (max-width <= 1239px) {
   .description-container-artist {
     padding-top: 225px;
   }

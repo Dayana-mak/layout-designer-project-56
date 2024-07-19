@@ -76,12 +76,12 @@
   background-size: cover;
 }
 
-@media screen and (max-width: 1239px) {
+@media screen and (max-width <= 1239px) {
   .pricing {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
   }
-  
+
   .pricing-container {
     h2 {
       margin-bottom: 49px;

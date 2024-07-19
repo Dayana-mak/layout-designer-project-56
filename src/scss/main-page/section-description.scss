@@ -36,7 +36,6 @@
     border-radius: 3px;
     padding-left: 20px;
     font-weight: bold;
-    color: $white;
 
     &::placeholder {
       color: $white;
@@ -53,7 +52,7 @@
   }
 }
 
-@media screen and (max-width: 1239px) {
+@media screen and (max-width <= 1239px) {
   .description-container-main {
     padding-top: 248px;
      

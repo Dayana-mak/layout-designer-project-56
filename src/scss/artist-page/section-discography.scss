@@ -8,8 +8,7 @@
   display: grid;
   grid-template-columns: repeat(4, 250px);
   grid-template-rows: repeat(2, 1fr);
-  column-gap: 50px;
-  row-gap: 25px;
+  gap: 50px 25px;
 
   .album-name {
     margin: 12px 0 0;
@@ -25,7 +24,7 @@
   
 }
 
-@media screen and (max-width:1239px){
+@media screen and (max-width <= 1239px){
   .discography-list {
     grid-template-columns: repeat(2, 138px);
     grid-template-rows: repeat(3, max-content);

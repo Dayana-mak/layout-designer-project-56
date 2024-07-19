@@ -68,7 +68,7 @@
   }
 }
 
-@media screen and (max-width: 1239px) {
+@media screen and (max-width <= 1239px) {
   .header-container {
     flex-direction: column;
     align-items: flex-start;

@@ -99,7 +99,7 @@ ul {
   list-style: none;
 }
 
-@media screen and (max-width: 1239px) {
+@media screen and (max-width <= 1239px) {
   h1 {
     font-size: 30px;
   }
