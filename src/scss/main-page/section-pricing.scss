@@ -29,17 +29,18 @@
 
   &-value {
     margin-bottom: 40px;
-    font-size: 64px;
-    line-height: 1;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
 
-    &::after {
-      position: relative;
-      top: -20px;
-      left: 16.32px;
+    .price {
+      font-size: 64px;
+      line-height: 1;
+    }
+    
+    .currency {
       font-size: 32px;
-      content: "руб.";
-      text-transform: uppercase;
     }
   }
 
