@@ -59,21 +59,20 @@
 
 .bg-free {
   background-image: url("../images/background/subscribe_1.png");
-  background-position: center;
+  background-position: top;
   background-size: cover;
-  background-repeat: no-repeat;
 
 }
 
 .bg-standard{
   background-image: url("../images/background/subscribe_2.png");
-  background-position: center;
+  background-position: top;
   background-size: cover;
 }
 
 .bg-premium {
   background-image: url("../images/background/subscribe_3.png");
-  background-position: center;
+  background-position: top;
   background-size: cover;
 }
 
@@ -81,9 +80,8 @@
   .pricing {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-
-    
   }
+  
   .pricing-container {
     h2 {
       margin-bottom: 49px;
